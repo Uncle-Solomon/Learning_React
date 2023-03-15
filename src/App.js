@@ -4,6 +4,7 @@ import Counter from "./components/counter";
 import Hello from "./components/hello";
 import Message from "./components/message";
 import Profile from "./components/profile";
+import Resume from "./components/resume";
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
       <Profile name="Solomon" lastname="Akute" />
       {/* <Message messageContent="This is a message from props!!" /> */}
 
-      <Counter />
+      {/* <Counter /> */}
+      <Resume name="Solomon" />
     </div>
   );
 }
