@@ -4,6 +4,7 @@ import FunctionalCounter from "./functionalCounter";
 
 const ConditionalComponent = () => {
   const [display, setDisplay] = useState(true);
+  let output;
   const handleClick = () => {
     if (display == true) {
       setDisplay(false);
@@ -12,20 +13,21 @@ const ConditionalComponent = () => {
     }
   };
   if (display) {
-    return (
+    output = (
       <div>
         <Counter />
         <button onClick={handleClick}>Click</button>
       </div>
     );
   } else {
-    return (
+    output = (
       <div>
         <FunctionalCounter />
-        <button onClick={handleClick}>Click</button>
+        <button onClick={handleClick}>newClick</button>
       </div>
     );
   }
+  return output;
 };
 
 export default ConditionalComponent;
