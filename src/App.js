@@ -7,10 +7,11 @@ import Profile from "./components/profile";
 function App() {
   return (
     <div className="App">
-      <Hello />
-      <Message />
-      <Profile name="Andrew" lastname="Ameh" />
+      {/* <Hello />
+      <Message /> */}
+      <Profile name="Andrew" lastname="Ameh" />;
       <Profile name="Solomon" lastname="Akute" />
+      <Message messageContent="This is a message from props!!" />
     </div>
   );
 }
