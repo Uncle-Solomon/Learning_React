@@ -1,3 +1,4 @@
+// Using Props
 const Profile = (props) => {
   // console.log(props);
   return (

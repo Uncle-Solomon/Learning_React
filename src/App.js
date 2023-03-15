@@ -9,9 +9,9 @@ function App() {
     <div className="App">
       {/* <Hello />
       <Message /> */}
-      <Profile name="Andrew" lastname="Ameh" />;
+      {/* <Profile name="Andrew" lastname="Ameh" />; */}
       <Profile name="Solomon" lastname="Akute" />
-      <Message messageContent="This is a message from props!!" />
+      {/* <Message messageContent="This is a message from props!!" /> */}
     </div>
   );
 }
