@@ -10,7 +10,7 @@ const FunctionalCounter = () => {
   };
   return (
     <div>
-      <div>Counter Value: {counter}</div>
+      <h3>Counter Value is: {counter}</h3>
       <div>
         <button onClick={increment}>Increase</button>
         <button onClick={decrement}>Decrease</button>
