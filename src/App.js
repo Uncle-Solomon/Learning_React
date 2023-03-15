@@ -17,11 +17,11 @@ function App() {
       <Profile name="Solomon" lastname="Akute" />
       {/* <Message messageContent="This is a message from props!!" /> */}
 
-      {/* <Counter /> */}
-      <Resume name="Solomon" />
+      <Counter />
+      {/* <Resume name="Solomon" />
 
       <FunctionEvent />
-      <ClassEvent />
+      <ClassEvent /> */}
     </div>
   );
 }
