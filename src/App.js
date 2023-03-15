@@ -2,6 +2,7 @@
 import "./App.css";
 import ClassEvent from "./components/classEvent";
 import Counter from "./components/counter";
+import FunctionalCounter from "./components/functionalCounter";
 import FunctionEvent from "./components/functionEvent";
 import Hello from "./components/hello";
 import Message from "./components/message";
@@ -18,6 +19,7 @@ function App() {
       {/* <Message messageContent="This is a message from props!!" /> */}
 
       <Counter />
+      <FunctionalCounter />
       {/* <Resume name="Solomon" />
 
       <FunctionEvent />
