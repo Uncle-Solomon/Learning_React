@@ -12,22 +12,17 @@ const ConditionalComponent = () => {
       setDisplay(true);
     }
   };
-  if (display) {
-    output = (
-      <div>
-        <Counter />
-        <button onClick={handleClick}>Click</button>
-      </div>
-    );
-  } else {
-    output = (
-      <div>
-        <FunctionalCounter />
-        <button onClick={handleClick}>newClick</button>
-      </div>
-    );
-  }
-  return output;
+  return display ? (
+    <div>
+      <Counter />
+      <button onClick={handleClick}>Click</button>
+    </div>
+  ) : (
+    <div>
+      <FunctionalCounter />
+      <button onClick={handleClick}>newClick</button>
+    </div>
+  );
 };
 
 export default ConditionalComponent;
