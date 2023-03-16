@@ -11,7 +11,7 @@ class Form extends Component {
       firstName: event.target.value,
       myWidth: 100,
     });
-    console.log(this.state.myWidth);
+    // console.log(this.state.myWidth);
   };
 
   handleLastNameChange = (event) => {
@@ -19,10 +19,17 @@ class Form extends Component {
       lastName: event.target.value,
     });
   };
+  handleSubmit = (event) => {
+    event.preventDefault();
+    console.log({
+      fName: this.state.firstName,
+      lName: this.state.lastName,
+    });
+  };
   render() {
     return (
       <div>
-        <form>
+        <form onSubmit={this.handleSubmit}>
           <input
             onChange={this.handleChange}
             type="text"
@@ -34,6 +41,7 @@ class Form extends Component {
             type="text"
             value={this.state.lastName}
           ></input>
+          <button type="submit">Submit</button>
         </form>
       </div>
     );
