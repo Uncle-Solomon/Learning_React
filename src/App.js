@@ -10,6 +10,7 @@ import FunctionEvent from "./components/functionEvent";
 import Hello from "./components/hello";
 import InlineComponent from "./components/inlineComponent";
 import Message from "./components/message";
+import ModuleComponnt from "./components/ModuleComponnt";
 import Product from "./components/product";
 import Profile from "./components/profile";
 import Resume from "./components/resume";
@@ -41,7 +42,9 @@ function App() {
 
       {/* <InlineComponent /> */}
 
-      <StylesheetComponent />
+      {/* <StylesheetComponent /> */}
+
+      <ModuleComponnt />
     </div>
   );
 }
