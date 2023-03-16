@@ -3,7 +3,9 @@ import "./App.css";
 import ClassEvent from "./components/classEvent";
 import ConditionalComponent from "./components/conditionalComponent";
 import Counter from "./components/counter";
+import Form from "./components/form";
 import FunctionalCounter from "./components/functionalCounter";
+import FunctionalForm from "./components/functionalForm";
 import FunctionEvent from "./components/functionEvent";
 import Hello from "./components/hello";
 import Message from "./components/message";
@@ -26,7 +28,11 @@ function App() {
       <FunctionEvent />
       <ClassEvent /> */}
 
-      <Product />
+      {/* <Product /> */}
+
+      <Form />
+
+      <FunctionalForm />
     </div>
   );
 }
