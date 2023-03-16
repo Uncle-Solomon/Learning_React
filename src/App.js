@@ -7,6 +7,7 @@ import FunctionalCounter from "./components/functionalCounter";
 import FunctionEvent from "./components/functionEvent";
 import Hello from "./components/hello";
 import Message from "./components/message";
+import Product from "./components/product";
 import Profile from "./components/profile";
 import Resume from "./components/resume";
 
@@ -20,11 +21,12 @@ function App() {
       {/* <Message messageContent="This is a message from props!!" /> */}
       {/* <Counter />
       <FunctionalCounter /> */}
-
-      <ConditionalComponent />
+      {/* <ConditionalComponent /> */}
       {/* <Resume name="Solomon" />
       <FunctionEvent />
       <ClassEvent /> */}
+
+      <Product />
     </div>
   );
 }
