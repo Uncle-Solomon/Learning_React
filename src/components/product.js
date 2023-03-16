@@ -32,7 +32,15 @@ const Product = () => {
       {product.name}: ${product.price}
     </h3>
   ));
-  return <div>{productList}</div>;
+
+  const fruits = ["Apple", "Mango", "Water Melon", "Apple"];
+  const fruitList = fruits.map((fruit, index) => (
+    <h3 key={index}>
+      {index}: {fruit}
+    </h3>
+  ));
+
+  return <div>{fruitList}</div>;
 };
 
 export default Product;
