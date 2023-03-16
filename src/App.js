@@ -8,10 +8,12 @@ import FunctionalCounter from "./components/functionalCounter";
 import FunctionalForm from "./components/functionalForm";
 import FunctionEvent from "./components/functionEvent";
 import Hello from "./components/hello";
+import InlineComponent from "./components/inlineComponent";
 import Message from "./components/message";
 import Product from "./components/product";
 import Profile from "./components/profile";
 import Resume from "./components/resume";
+import StylesheetComponent from "./components/StylesheetComponent";
 import Todo from "./components/Todo";
 
 function App() {
@@ -35,7 +37,11 @@ function App() {
 
       <FunctionalForm /> */}
 
-      <Todo />
+      {/* <Todo /> */}
+
+      {/* <InlineComponent /> */}
+
+      <StylesheetComponent />
     </div>
   );
 }
