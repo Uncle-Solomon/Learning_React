@@ -12,6 +12,7 @@ import Message from "./components/message";
 import Product from "./components/product";
 import Profile from "./components/profile";
 import Resume from "./components/resume";
+import Todo from "./components/Todo";
 
 function App() {
   return (
@@ -30,9 +31,11 @@ function App() {
 
       {/* <Product /> */}
 
-      <Form />
+      {/* <Form />
 
-      <FunctionalForm />
+      <FunctionalForm /> */}
+
+      <Todo />
     </div>
   );
 }
