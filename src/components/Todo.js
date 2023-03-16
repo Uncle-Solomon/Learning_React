@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ListItem from "./ListItem";
 
 const Todo = () => {
   const [todo, setTodo] = useState("");
@@ -22,6 +23,9 @@ const Todo = () => {
         <input onChange={handleChange} value={todo} type="text"></input>
         <button type="submit">Add</button>
       </form>
+      {todoList.map((item, index) => (
+        <ListItem key={index} name={item} />
+      ))}
     </div>
   );
 };
