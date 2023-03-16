@@ -3,6 +3,7 @@ import { Component } from "react";
 class Form extends Component {
   state = {
     firstName: "",
+    lastName: "",
     myWidth: 50,
   };
   handleChange = (event) => {
@@ -11,6 +12,12 @@ class Form extends Component {
       myWidth: 100,
     });
     console.log(this.state.myWidth);
+  };
+
+  handleLastNameChange = (event) => {
+    this.setState({
+      lastName: event.target.value,
+    });
   };
   render() {
     return (
@@ -21,6 +28,11 @@ class Form extends Component {
             type="text"
             value={this.state.firstName}
             width={`${this.state.myWidth} px`}
+          ></input>
+          <input
+            onChange={this.handleLastNameChange}
+            type="text"
+            value={this.state.lastName}
           ></input>
         </form>
       </div>
